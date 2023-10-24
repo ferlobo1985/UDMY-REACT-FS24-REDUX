@@ -6,7 +6,7 @@ export const fetchUser = createAsyncThunk(
     'users/fetchUser',
     async(obj,{ rejectWithValue, fulfillWithValue })=>{
         try {
-            const res = await axios.get(`https://jsonplaceholder.typicode.com/users`);
+            const res = await axios.get(`https://jsonplaceholder.typicode.com/users/111`);
             // return res.data;
              return fulfillWithValue(res.data)
         } catch(err){
